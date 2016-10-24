@@ -149,4 +149,8 @@ app.controller('signupCtrl',['$scope','$location','$http',
         });
 
       }
+      $scope.logout = function() {
+        sessionStorage.clear();
+        $location.path("/login");
+      }
     }]);
